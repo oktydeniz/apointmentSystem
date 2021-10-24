@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/singInFragment">
+
+    <fragment
+        android:id="@+id/firstChoiceFragment"
+        android:name="com.example.appointmentsystem.views.user.FirstChoiceFragment"
+        android:label="fragment_first_choise"
+        tools:layout="@layout/fragment_first_choise" >
+        <action
+            android:id="@+id/action_firstChoiceFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singInFragment"
+        android:name="com.example.appointmentsystem.views.user.SingInFragment"
+        android:label="fragment_sing_in"
+        tools:layout="@layout/fragment_sing_in" >
+        <action
+            android:id="@+id/action_singInFragment_to_firstChoiceFragment"
+            app:destination="@id/firstChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.example.appointmentsystem.views.user.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" >
+        <action
+            android:id="@+id/action_singUpFragment_to_singInFragment"
+            app:destination="@id/singInFragment"
+            app:popUpTo="@id/singInFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Appointment System</string>
+    <string name="patient">Patient</string>
+    <string name="doctor">Doctor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tc_number">TC Number</string>
+    <string name="password">Password</string>
+    <string name="sing_in">Sing in</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="about_you">About You</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sing_up">Sing Up</string>
+
+    <string-array name="departments">
+        <item>Oral and Dental Diseases</item>
+        <item>Nutrition and Diet</item>
+        <item>Dermatology</item>
+        <item>Pediatric Surgery</item>
+        <item>Internal Medicine</item>
+        <item>Aesthetics, Plastic Surgery</item>
+        <item>General Surgery</item>
+        <item>Chest Diseases</item>
+        <item>Eye Diseases</item>
+        <item>Gynecology</item>
+        <item>Heart Diseases</item>
+        <item>Otorhinolaryngology</item>
+        <item>Orthopedics and Traumatology</item>
+
+    </string-array>
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_opening">OpeningActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="i_am_not_member">I am not member</string>
+    <string name="select_your_department">Select your department</string>
+    <string name="select_gender">Select gender</string>
+    <string name="full_name">Full Name</string>
+    <string name="select_the_position_to_register">Select the position to register</string>
+    <string name="loading">loading</string>
+    <string name="somethings_wrong">Somethings wrong</string>
+    <string name="create_new_appointment">Create new Appointment</string>
+    <string name="select_doctors">Select doctors</string>
+    <string name="select_hour">Select Hour</string>
+    <string name="create">create</string>
+    <string name="dr">Dr.</string>
+    <string name="message">Message</string>
+    <string name="clock">Clock :</string>
+    <string name="gender">Gender</string>
+    <string name="department">Department</string>
+    <string name="sing_out">Sing Out</string>
+
+</resources>
