@@ -10,5 +10,5 @@ Doktor, Hasta ve Randevular adı altınta üç ana dal ve bu dallarda ilgili bil
 
 Her bir XML sayfası ve Kotlin sayfası ViewBinding ve DataBinding gibi yapılar ile kodlanmış. Aynı zamanda XML sayfalarında ConstraintLayout, RecyclerView sınıfını kullanarak da görüntüleme işlemlerini gerçekleştirdim.
 
-## Projede eksik kalan yonler
+## Projede eksik kalan kısımlar
 Kullanıcının aynı randevuyu iki kere kaydetme veya ayni doktora iki kez aynı saatte randevu alma işlemi, UI.
