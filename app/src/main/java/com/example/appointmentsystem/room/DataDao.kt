@@ -65,5 +65,8 @@ interface DataDao {
     @Query("SELECT * FROM Appointment WHERE doctor_id = :doctorNumber")
     suspend fun getAppointmentDoctor(doctorNumber:String) :List<Appointment>
 
+    @Query("SELECT * FROM Appointment WHERE doctor_id = :doctorId AND date = :date LIMIT 1 ")
+    suspend fun isAppointment(doctorId:String, date:String) :Appointment?
+
 
 }
