@@ -1,11 +1,13 @@
 package com.example.appointmentsystem.views.app
 
+
+import androidx.app.Fragment
+import androidx.fragment.app
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.example.appointmentsystem.R
@@ -98,17 +100,17 @@ class NewAppointmentFragment : Fragment() {
         manager = SharedPreferenceManager(requireContext())
     }
     private fun observeData(){
-        vModel.doctors.observe(viewLifecycleOwner,{
-            it.let { doctors->
+        vModel.doctors.observe(viewLifecycleOwner) {
+            it.let { doctors ->
                 selectedAllDoctors.addAll(doctors)
                 val names = ArrayList<String>()
-                 doctors.forEach {dr->
-                     dr.fullName?.let { it1 -> names.add(it1) }
+                doctors.forEach { dr ->
+                    dr.fullName?.let { it1 -> names.add(it1) }
                 }
                 val adapter = ArrayAdapter(requireContext(), R.layout.item_list, names)
                 binding.autoCompleteNewAppointmentDoctors.setAdapter(adapter)
             }
-        })
+        }
     }
 
     override fun onDestroyView() {
